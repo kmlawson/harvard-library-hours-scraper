@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+	<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+	<meta name="viewport" content="width=320, initial-scale=1.0, user-scalable=no" />
+	
+	<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+	<title>Build Your Own Harvard Library Hours List</title>
+	<style type="text/css">
+	<!--
+	body {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	#mylink {
+		font-size: xx-large;
+	}
+	
+	.liblist {
+		font-size: medium;
+		line-height:130%
+	}
+	
+	a:link {
+		color: #333333;
+	}
+	.style2 {font-size: small}
+	a:visited {
+		color: #333333;
+	}
+	a:hover {
+		color: #333333;
+	}
+	a:active {
+		color: #333333;
+	}
+	-->
+	</style>
+	<script type="text/javascript">
+	
+	function buildlink() {
+		liblist=""
+		for (i=0; i<document.harvardlibraries.elements.length;i++) {
+			if (document.harvardlibraries.elements[i].checked==true) {
+				liblist=(liblist+document.harvardlibraries.elements[i].value)
+			}
+		}
+		document.getElementById("mylink").innerHTML = "http://huginn.net/h/?"+liblist
+		document.getElementById("mylink").href = document.getElementById("mylink").innerHTML
+	}	
+	</script>
+	</head>
+
+	<body>
+	<p><strong>Build Your Own Library Hours List Link</strong></p>
+	<p>Select the libraries you wish to have displayed in your library hour list. Bookmark the resulting link.</p>
+	<p><strong><a id="mylink" href="http://huginn.net/h/">http://huginn.net/h/</a></strong></p>
+<p>	<form name="harvardlibraries">
+	
+
+<input type="checkbox" value="w" onclick="buildlink()"><span class="liblist">Widener Library</span></input><br /> 	
+<input type="checkbox" value="l" onclick="buildlink()"><span class="liblist">Lamont Library</span></input><br />
+<input type="checkbox" value="x" onclick="buildlink()"><span class="liblist">Harvard Law School Library</span></input><br /> 
+<input type="checkbox" value="y" onclick="buildlink()"><span class="liblist">Harvard-Yenching Library</span></input><br /> 
+<input type="checkbox" value="h" onclick="buildlink()"><span class="liblist">Houghton Library</span></input><br /><br />
+
+<input type="checkbox" value="b" onclick="buildlink()"><span class="liblist">The Afro-American Studies Reading Room</span><br />   
+<input type="checkbox" value="a" onclick="buildlink()"><span class="liblist">Andover-Harvard Theological Library</span></input><br /> 
+<input type="checkbox" value="d" onclick="buildlink()"><span class="liblist">Arnold Arboretum Horticultural Library (Jamaica Plain)</span></input><br /> 
+<input type="checkbox" value="s" onclick="buildlink()"><span class="liblist">Arthur and Elizabeth Schlesinger Library on the History of Women in America</span></input><br /> 
+<input type="checkbox" value="e" onclick="buildlink()"><span class="liblist">Biblioteca Berenson</span></input><br /> 
+<input type="checkbox" value="h" onclick="buildlink()"><span class="liblist">Blue Hill Meteorological Observatory Library</span></input><br /> 
+<input type="checkbox" value="c" onclick="buildlink()"><span class="liblist">Cabot Science Library</span></input><br /> 
+<input type="checkbox" value="i" onclick="buildlink()"><span class="liblist">Center for Hellenic Studies Library</span></input><br /> 
+<input type="checkbox" value="j" onclick="buildlink()"><span class="liblist">Chemistry and Chemical Biology Library</span></input><br /> 
+<input type="checkbox" value="k" onclick="buildlink()"><span class="liblist">Child Memorial Library</span></input><br /> 
+<input type="checkbox" value="n" onclick="buildlink()"><span class="liblist">Countway Library of Medicine</span></input><br /> 
+<input type="checkbox" value="o" onclick="buildlink()"><span class="liblist">Dumbarton Oaks Research Library</span></input><br /> 
+<input type="checkbox" value="p" onclick="buildlink()"><span class="liblist">Ernst Mayr Library of the Museum of Comparative Zoology</span></input><br /> 
+<input type="checkbox" value="q" onclick="buildlink()"><span class="liblist">Fine Arts Library (Littauer and Sackler Locations)</span></input><br /> 
+<input type="checkbox" value="f" onclick="buildlink()"><span class="liblist">Fung Library</span></input><br /> 
+<input type="checkbox" value="r" onclick="buildlink()"><span class="liblist">George David Birkhoff Mathematical Library</span></input><br /> 
+<input type="checkbox" value="u" onclick="buildlink()"><span class="liblist">George Edward Woodberry Poetry Room</span></input><br /> 
+<input type="checkbox" value="v" onclick="buildlink()"><span class="liblist">Gibb Islamic Seminar Library</span></input><br /> 
+<input type="checkbox" value="z" onclick="buildlink()"><span class="liblist">Gordon McKay Library of Engineering and Applied Sciences</span></input><br /> 
+<input type="checkbox" value="g" onclick="buildlink()"><span class="liblist">The Grossman Library and Resource Center for the Harvard Extension School</span></input><br /> 
+<input type="checkbox" value="A" onclick="buildlink()"><span class="liblist">Gutman Library</span></input><br /> 
+<input type="checkbox" value="B" onclick="buildlink()"><span class="liblist">Harvard Film Archive</span></input><br /> 
+<input type="checkbox" value="C" onclick="buildlink()"><span class="liblist">Harvard Forest Library</span></input><br /> 
+<input type="checkbox" value="E" onclick="buildlink()"><span class="liblist">Harvard Map Collection</span></input><br /> 
+<input type="checkbox" value="F" onclick="buildlink()"><span class="liblist">Harvard MIT-Data Center</span></input><br /> 
+<input type="checkbox" value="G" onclick="buildlink()"><span class="liblist">Harvard Theatre Collection, Houghton Library</span></input><br /> 
+<input type="checkbox" value="H" onclick="buildlink()"><span class="liblist">Harvard University Development Office Library</span></input><br /> 
+<input type="checkbox" value="J" onclick="buildlink()"><span class="liblist">History Departmental Library</span></input><br />  
+<input type="checkbox" value="K" onclick="buildlink()"><span class="liblist">Loeb Music Library</span></input><br /> 
+<input type="checkbox" value="L" onclick="buildlink()"><span class="liblist">Nieman Foundation Bill Kovach Collection of Contemporary Journalism</span></input><br /> 
+<input type="checkbox" value="M" onclick="buildlink()"><span class="liblist">Office of Career Services Library</span></input><br /> 
+<input type="checkbox" value="N" onclick="buildlink()"><span class="liblist">Physics Research Library</span></input><br /> 
+<input type="checkbox" value="O" onclick="buildlink()"><span class="liblist">Property Information Resource Center</span></input><br /> 
+<input type="checkbox" value="P" onclick="buildlink()"><span class="liblist">Robbins Library of Philosophy</span></input><br /> 
+<input type="checkbox" value="Q" onclick="buildlink()"><span class="liblist">Statistics Library</span></input><br /> 
+<input type="checkbox" value="t" onclick="buildlink()"><span class="liblist">Tozzer Library</span></input><br /> 
+<input type="checkbox" value="R" onclick="buildlink()"><span class="liblist">Ukrainian Research Institute Reference Library</span></input><br /> 
+<input type="checkbox" value="S" onclick="buildlink()"><span class="liblist">Weissman Preservation Center Library</span></input><br /> 
+
+</form>
+</p>
+
+<p>
+	<a href="about.html">About</a> |
+	<a href="http://lib.harvard.edu/libraries/hours.html" >Full Listing</a>
+	</p>
+	
+</body>
+</html>
