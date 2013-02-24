@@ -19,7 +19,7 @@ A copy of the license should be found with the code.
 
 
 date_default_timezone_set("America/New_York");
-$url="http://lib.harvard.edu/libraries/hours.html";
+$url="http://lib.harvard.edu/all-library-hours";
 $page=file_get_contents($url);
 
 function findtimes($libraryname) {
